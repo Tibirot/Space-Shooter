@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7353642624179600022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7353642624179600020}
+  - component: {fileID: 7353642624179600023}
+  - component: {fileID: 7353642624179600021}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7353642624179600020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353642624179600022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7353642624179600023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353642624179600022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee85f39a17682cf46a7132a745a54f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveConfigs:
+  - {fileID: 11400000, guid: 2bb3d77a232a17d4f8620a6005c394ff, type: 2}
+  - {fileID: 11400000, guid: 2dc4e6d7311f5f64d8791b24dc29513f, type: 2}
+  - {fileID: 11400000, guid: a6601120a0a1886478febc203d4b57e3, type: 2}
+  - {fileID: 11400000, guid: d6155bd5c1762e44ca0ce7d441ed9912, type: 2}
+  - {fileID: 11400000, guid: a7d047f74d12e0c4e81c3a8dbc8031c7, type: 2}
+  - {fileID: 11400000, guid: ff82ed77fd5eb594d8343cd549201a8c, type: 2}
+  - {fileID: 11400000, guid: 78411717ef7411d488cdacbeb5a793d2, type: 2}
+  startingWave: 0
+  looping: 1
+--- !u!114 &7353642624179600021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353642624179600022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c402e5459249e41873a9cee1576d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
